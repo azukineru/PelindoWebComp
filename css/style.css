@@ -1,0 +1,317 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	overflow: hidden;
+}
+h1{
+	font-size: 4em;
+}
+p{
+	font-size: 1em;
+}
+span{
+	float: right;
+	color: blue;
+}
+.section{
+	text-align: center;
+}
+
+/* Gradient */
+.gradient{
+	position: fixed;
+	width: 100%;
+	height: 300px;
+	top:0;
+	left: 0;
+	z-index: 50;
+	background: white;
+	background: -webkit-linear-gradient(rgba(255, 255, 255,1), rgba(255, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255, 255, 255,1), rgba(255, 0, 0, 0)); /* Standard syntax */
+}
+
+/* Logo */
+.logo{
+	position: fixed;
+	width: 300px;
+	height: 120px;
+	top: 0;
+	left: 0;
+	z-index: 70;
+	background-image: url(../img/logo_pelindo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 120px;
+}
+
+/* Menu
+ * --------------------------------------- */
+#menu{
+	position:fixed;
+	top:0;
+	left:50%;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin-top: 20px;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+
+/* Background Image */
+.bg1{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	border: 1px solid #000;
+	margin-top: -130px;
+	background-image: url(../img/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 0;
+}
+
+.bg2{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%;
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 185%;
+	z-index: 0
+}
+
+/* Tentang Kami Text */
+#tentangkami_text{
+	position: relative;
+	top: 20%;
+	left: 5%;
+	width: 400px;
+	height: 100px;
+	z-index: 20;
+}
+
+/* Tentang Pelindo */
+#sekilas_pelindo{
+	position: absolute;
+	top: 20%;
+	left:110%;
+	width: 700px;
+	height: 250px;
+	z-index: 30;
+	background-color: white;
+	text-align: left;
+	padding: 5px;
+}
+#more_pelindo{
+	position: absolute;
+	top: 60%;
+	left: 110%;
+	width: 700px;
+	height: 250px;
+	z-index: 30;
+	padding: 5px;
+}
+.submore{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-right: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	-webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      background-color: white;
+}
+.submore h2{
+	position: relative;
+	top: 10px;
+}
+.submore img{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+/* Modal */
+/*** POPUP ***/
+[data-popup] {
+  display    : none;
+  position   : relative;
+  z-index    : 9999;
+  top: 0;
+  left: 110%;
+  width      :130%;
+  height: 530px;
+  background : white;
+  transition: box-shadow 2s;
+  box-shadow : 0 0 0 1900px hsla(220,7%,18%,0.6),
+          0 10px 30px -5px hsla(220,7%,18%,0.6);
+}
+
+.modal_wrapper{
+	width: 100%;
+	height: 550px;
+	background-color: white;
+}
+
+#modal h2{
+	position: relative;
+	top: 20px;
+	left: 0;
+	text-align: center;
+}
+
+.close_button{
+	position: absolute;
+	top: 0;
+	left: 90%;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/close.png);
+	background-size: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.modal_content{
+	width: 90%;
+	height: 420px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: left;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.modal_content img{
+	max-width: 500px;
+	vertical-align: middle;
+}
+
+.modal_content ol{
+	margin-left: 10px;
+}

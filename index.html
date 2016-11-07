@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Pelindo III</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/animation.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+	    		direction: 'horizontal',
+			    sectionsColor: ['white', '#1561AD', 'blue', '#39C', 'white'],
+			    normalScrollElements: null,
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+    </script>
+
+</head>
+
+<body>
+
+
+	<div class="logo">
+	</div>
+
+	<ul id="menu">
+		<li id="button_home" data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+		<li id="button_media" data-menuanchor="page2"><a href="#page2">Tentang Kami</a></li>
+		<li id="button_cabang" data-menuanchor="page3"><a href="#page3">Cabang Pelabuhan</a></li>
+		<li id="button_kontak" data-menuanchor="page4"><a href="#page4">Kontak</a></li>
+	</ul>
+
+	
+	<div id="pagepiling">
+	    <div class="section">
+	    	<div class="gradient">
+			</div>
+	    	<div class="bg1">
+	    	</div>
+	    </div>
+
+	    <div class="section">
+
+	    	<div class="bg2">
+		    	<div id="tentangkami_text">
+		    		<h1>Tentang Kami</h1>
+		    	</div>
+
+		    	<div id="sekilas_pelindo">
+		    		<h2>Sekilas Pelindo III</h2>
+		    		<br>
+		    		<p>
+		    		PT Pelabuhan Indonesia III (Persero) atau lebih dikenal dengan sebutan Pelindo 3 merupakan salah satu Badan Usaha Milik Negara (BUMN) yang bergerak dalam jasa layanan operator terminal pelabuhan. Perusahaan dibentuk berdasarkan Peraturan Pemerintah Republik Indonesia Nomor 58 Tahun 1991 tentang Pengalihan Bentuk Perusahaan Umum (Perum) Pelabuhan III Menjadi Perusahaan Perseroan (Persero). Peraturan tersebut ditandatangani oleh Presiden Ke-2 Republik Indonesia Soeharto pada tanggal 19 Oktober 1991.
+		    		<br><br>
+		    		<span>>> Selengkapnya</span>
+		    		</p>
+		    	</div>
+
+	    		<div id="more_pelindo">
+	    			<a data-pop="1">
+	    			<div class="submore">
+	    				<h2>Visi & Misi</h2>
+	    				<img src="img/vm.png">
+	    			</div>
+	    			</a>
+	    			<a data-pop="2">
+	    			<div class="submore">
+	    				<h2>Bisnis Kami</h2>
+	    				<img src="img/bn.png">
+	    			</div>
+	    			</a>
+	    			<a data-pop="3">
+	    			<div class="submore">
+	    				<h2>Tonggak Sejarah</h2>
+	    				<img src="img/ts.png">
+	    			</div>
+	    			</a>
+	    		</div>
+
+	    		<div id="modal" data-popup="1" class="animated bounceInDown">
+                    <h2>Visi & Misi</h2>
+                    <div data-pop class="close_button"></div>
+                    <div class="modal_content">                                
+                        <h3>Visi</h3><br>
+                        Berkomitmen Memacu Integrasi Logistik dengan Layanan Jasa Pelabuhan yang Prima
+                        <br><br>
+                        <h3>Misi</h3>
+                        <ol type="1">
+                        	<li>Menjamin penyediaan jasa pelayanan prima melampaui standar yang berlaku secara konsisten;</li>
+                        	<li>Memacu kesinambungan daya saing industri nasional melalui biaya logistik yang kompetitif;</li>
+                        	<li>Memenuhi harapan semua stakeholder melalui prinsip kesetaraan dan tata kelola perusahaan yang baik;</li>
+                        	<li>Menjadikan SDM yang berkompeten, berkinerja handal, dan berpekerti luhur;</li>
+                        	<li>Mendukung perolehan devisa negara dengan memperlancar arus perdagangan.</li>
+                        </ol>
+                        
+                    </div>
+                </div>
+
+                <div id="modal" data-popup="2" class="animated bounceInDown">
+                    <h2>Bisnis Kami</h2>
+                    <div data-pop class="close_button"></div>
+                    <div class="modal_content">                                
+                        <p>
+                        Sebagai operator terminal pelabuhan, Pelindo 3 memiliki beberapa bidang usaha yang menjadi bisnis inti perusahaan. Lingkup usaha yang dijalankan oleh Pelindo 3 diatur dalam Keputusan Menteri Perhubungan Nomor KP 88 Tahun 2011 tentang Pemberian Izin Usaha kepada PT. Pelabuhan Indonesia III (Persero) sebagai Badan Usaha Pelabuhan. Usaha-usaha yang dijalankan oleh Pelindo 3 meliputi:
+                        </p><br>
+                        <ol type="1">
+                        	<li>Penyediaan dan/atau pelayanan jasa terminal peti kemas, curah cair, curah kering, dan Ro-Ro;</li>
+                        	<li>Penyediaan dan/atau pelayanan jasa bongkar muat barang;</li>
+                        	<li>Penyediaan dan/atau pelayanan jasa dermaga untuk pelaksanaan kegiatan bongkar muat barang dan peti kemas;</li>
+                        	<li>Penyediaan dan/atau pelayanan jasa dermaga untuk bertambat;</li>
+                        	<li>Penyediaan dan/atau pelayanan fasilitas naik turun penumpang dan/atau kendaraan;</li>
+                        	<li>Penyediaan dan/atau pelayanan jasa gudang dan tempat penimbunan barang, alat bongkat muat, serta peralatan pelabuhan;</li>
+                        	<li>Penyediaan dan/atau pelayanan pengisian bahan bakar dan pelayanan air bersih;</li>
+                        	<li>Penyediaan dan/atau pelayanan pusat distribusi dan konsolidasi barang</li>
+                        	<li>Penyediaan dan/atau pelayanan jasa penundaan kapal.</li>
+                        </ol>  
+                        <br>
+                        Bidang usaha tersebut dijalankan oleh Pelindo 3 secara profesional demi memberikan pelayanan terbaik demi terciptanya kepuasan pelanggan.                    
+                    </div>
+                </div>
+
+                <div id="modal" data-popup="3" class="animated bounceInDown">
+                    <h2>Tonggak Sejarah</h2>
+                    <div data-pop class="close_button"></div>
+                    <div class="modal_content">                                
+                        Sebelum tahun 1960<br>
+                        Keberadaan pelabuhan di Indonesia telah ada sejak jaman kerajaan Hindu-Budha menguasai Nusantara. Peranan pelabuhan saat itu sangat penting sebagai jalur perdagangan antar daerah maupun antar benua. Tercatat saudagar dari Tiongkok, India, Arab, dan negara-negara lainnya pernah menginjakkan kaki di bumi Nusantara, hingga pada akhirnya pada tahun 1596, Belanda pertama kali datang melalui Pelabuhan Banten di bawah pimpinan Cornelis de Houtman. Pada masa kolonial Belanda pengelolaan pelabuhan di bawah koordinasi Department Van Scheepvaart yang bertugas untuk memberikan layanan jasa kepelabuhan dan dilaksanakan oleh Havenbedrijf. Pada tahun 1952 bentuk perusahaan berubah menjadi Jawatan Pelabuhan hingga tahun 1959.<br><br>
+                        Tahun 1960<br>
+                        Cikal bakal Pelindo 3 bermula pada tahun 1960 saat pemerintah mengeluarkan Peraturan Pemerintah Pengganti Undang-Undang (Perpu) No. 19 Tahun 1960 tentang Perusahaan Negara. Pasca terbitnya Perpu No. 19 Tahun 1960 pemerintah Republik Indonesia kala itu menerbitkan Peraturan Pemerintah Nomor 115 – 122 Tahun 1961 dimana masing-masing peraturan tersebut berisi tentang Pendirian Perusahaan Pelabuhan Negara (PN) Pelabuhan Daerah I-VIII, dimana Pelabuhan Belawan sebagai pusat PN Pelabuhan Daerah I, Pelabuhan Teluk Bayur sebagai pusat PN Pelabuhan Daerah II, Pelabuhan Palembang sebagai pusat PN Pelabuhan Daerah III, Pelabuhan Tanjung Priok sebagai pusat PN Pelabuhan Daerah IV, Pelabuhan Semarang sebagai pusat PN Pelabuhan Daerah V, Pelabuhan Surabaya sebagai pusat PN Pelabuhan Daerah VI, Pelabuhan Banjarmasin sebagai pusat PN Pelabuhan Daerah VII, dan Pelabuhan Makassar sebagai pusat PN Pelabuhan Daerah VIII.<br><br>
+                        Tahun 1969<br>
+						Pengelolaan Perusahaan Negara Pelabuhan Daerah I-VIII bertahan hingga tahun 1969 seiring dengan diterbitkannya Peraturan Pemerintah No. 18 Tahun 1969 tentang Pembubaran Perusahaan-perusahaan Negara Pelabuhan dan Pengalihan Pembinaannya ke Dalam Organisasi Pembinaan Pelabuhan.<br><br>
+						Tahun 1983<br>
+						Pada tahun 1983 pengelolaan pelabuhan kembali berubah. Perusahaan Pelabuhan Daerah I-VIII dilebur menjadi empat wilayah pelabuhan dengan nama Perusahaan Umum (Perum) Pelabuhan I-IV. Perum Pelabuhan III terbentuk berdasarkan Peraturan Pemerintah No. 16 Tahun 1983 tentang Perusahaan Umum Pelabuhan III dengan kantor pusat berkedudukan di Surabaya. Perum Pelabuhan III mengelola 36 pelabuhan yang tersebar di 9 (sembilan) provinsi meliputi Jawa Tengah, Jawa Timur, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, Kalimantan Tengah, Kalimantan Selatan, dan Kalimantan Timur.<br><br>
+						Tahun 1991 – sekarang<br>
+						Terbitnya Peraturan Pemerintah No. 58 Tahun 1991 tanggal 19 Oktober 1991 tentang Pengalihan Bentuk Perusahaan Umum (Perum) Pelabuhan III Menjadi Perusahaan Perseroan (Persero) kembali mengubah status perusahaan dari Perum Pelabuhan III menjadi PT. Pelabuhan Indonesia III (Persero). Berdasarkan Peraturan Pemerintah tersebut Pelindo 3 mengelola 33 pelabuhan di 8 (delapan) provinsi meliputi Jawa Tengah, Jawa Timur, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, Kalimantan Tengah, dan Kalimantan Selatan. Perubahan status menjadi perusahaan perseroan dicatatkan di hadapan Notaris Imas Fatimah S.H. pada tanggal 1 Desember 1992. Tanggal pencatatan itulah yang kini dijadikan sebagai hari jadi PT. Pelabuhan Indonesia III (Persero). Kini, Pelindo 3 mengelola 43 pelabuhan di bawah kendali 16 kantor cabang di 7 (tujuh) provinsi di Indonesia.<br><br>
+
+                    </div>
+                </div>
+
+	    	</div>
+	    </div>
+
+	    
+
+	    <div class="section">
+	    	<h1>Cabang Pelabuhan</h1>
+	    </div>
+	</div>
+
+	<script type="text/javascript" src="js/animation.js"></script>
+
+</body>
+</html>
