@@ -215,7 +215,6 @@
                 $popup.slideUp(0); 
             }
         });
-
         $("[data-pop]").click(function(){
           var n = $(this).data('pop');
           if( n == 3 ){
@@ -224,6 +223,9 @@
           var $popup = n ? $("[data-popup='"+n+"']") : $(this).closest("[data-popup]");
           $popup.slideToggle(0);
         });
+        document.getElementById("close_button3").onmousedown = function () {
+            PP.setAllowScrolling(true);            
+        };
 
         /**
         * Enables vertical centering by wrapping the content and the use of table and table-cell

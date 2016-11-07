@@ -12,6 +12,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+	<script type="text/javascript" src="js/googlemap.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -35,6 +36,10 @@
 			    }
 			});
 	    });
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR24m4jUgHaEpqhmxvQRys7jFsikYdL8Y&callback=initMap">
     </script>
 
 </head>
@@ -143,7 +148,7 @@
 
                 <div id="modal" data-popup="3" class="animated bounceInDown">
                     <h2>Tonggak Sejarah</h2>
-                    <div data-pop class="close_button"></div>
+                    <div data-pop class="close_button" id="close_button3"></div>
                     <div class="modal_content">                                
                         Sebelum tahun 1960<br>
                         Keberadaan pelabuhan di Indonesia telah ada sejak jaman kerajaan Hindu-Budha menguasai Nusantara. Peranan pelabuhan saat itu sangat penting sebagai jalur perdagangan antar daerah maupun antar benua. Tercatat saudagar dari Tiongkok, India, Arab, dan negara-negara lainnya pernah menginjakkan kaki di bumi Nusantara, hingga pada akhirnya pada tahun 1596, Belanda pertama kali datang melalui Pelabuhan Banten di bawah pimpinan Cornelis de Houtman. Pada masa kolonial Belanda pengelolaan pelabuhan di bawah koordinasi Department Van Scheepvaart yang bertugas untuk memberikan layanan jasa kepelabuhan dan dilaksanakan oleh Havenbedrijf. Pada tahun 1952 bentuk perusahaan berubah menjadi Jawatan Pelabuhan hingga tahun 1959.<br><br>
@@ -161,11 +166,13 @@
 
 	    	</div>
 	    </div>
-
-	    
+   
 
 	    <div class="section">
-	    	<h1>Cabang Pelabuhan</h1>
+	    	<div class="gradient2">
+			</div>
+			<div id="map"></div>
+			</div>
 	    </div>
 	</div>
 
