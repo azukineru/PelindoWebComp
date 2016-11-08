@@ -144,6 +144,42 @@ span{
 	color: #fff;
 }
 
+/*Dropdown menu */
+/*___________________________________________________________________________*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: black;
+	background-color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: grey;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+    border-radius: 10px;
+}
+
 /* Background Image */
 .bg1{
 	position: relative;
@@ -332,13 +368,13 @@ span{
 
 /* Media Content */
 /*--------------------------------------------------------*/
-#media_wrapper{
+#media_wrapper2{
 	position: relative;
 	width: 100%;
 	height: 87%;
 	top: 43px;
 	left: 0;
-	background-color: black;
+	background-color: #1561AD;
 }
 .subnews1{
 	position: relative;
@@ -346,6 +382,7 @@ span{
 	margin: 0 auto;
 	margin-right: 20px;
 	margin-top: 20px;
+	vertical-align: middle;
 }
 .subnews2{
 	position: relative;
@@ -353,6 +390,18 @@ span{
 	margin: 0 auto;
 	margin-right: 20px;
 	margin-top: 20px;	
+}
+#newsx{
+	width: 625px;
+	height: 250px;
+	color: black;
+	background-color: #1561AD;	
+	font-size: 300%;
+}
+#newsx p{
+	float: right;
+	margin-top: 200px;
+	margin-left: 50px;
 }
 #news1{
 	width: 625px;
@@ -369,3 +418,4 @@ span{
 	height: 250px;
 	background-color: white;
 }
+
