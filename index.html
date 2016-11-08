@@ -22,7 +22,7 @@
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 	    		direction: 'horizontal',
-			    sectionsColor: ['white', '#1561AD', 'blue', '#39C', 'white'],
+			    sectionsColor: ['white', '#1561AD', 'white', '#39C', 'white'],
 			    normalScrollElements: null,
 			    afterRender: function(){
 			    	$('#pp-nav').addClass('custom');
@@ -52,9 +52,10 @@
 
 	<ul id="menu">
 		<li id="button_home" data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
-		<li id="button_media" data-menuanchor="page2"><a href="#page2">Tentang Kami</a></li>
-		<li id="button_cabang" data-menuanchor="page3"><a href="#page3">Cabang Pelabuhan</a></li>
-		<li id="button_kontak" data-menuanchor="page4"><a href="#page4">Kontak</a></li>
+		<li id="button_tentang" data-menuanchor="page2"><a href="#page2">Tentang Kami</a></li>
+		<li id="button_media" data-menuanchor="page3"><a href="#page3">Media</a></li>
+		<li id="button_cabang" data-menuanchor="page4"><a href="#page4">Cabang Pelabuhan</a></li>
+		<li id="button_kontak" data-menuanchor="page5"><a href="#page5">Kontak</a></li>
 	</ul>
 
 	
@@ -167,12 +168,27 @@
 	    	</div>
 	    </div>
    
+	    <div class="section">
+	    	<div id="media_wrapper">
+	    		<div class="subnews1" id="news1">
+	    		</div>
+	    		<div class="subnews1" id="news2">
+	    		</div>
+	    		<div class="subnews1" id="news3">
+	    		</div>
+	    		<div class="subnews2" id="news1">
+	    		</div>
+	    		<div class="subnews2" id="news2">
+	    		</div>
+	    		<div class="subnews2" id="news3">
+	    		</div>
+	    	</div>
+	    </div>
 
 	    <div class="section">
 	    	<div class="gradient2">
 			</div>
-			<div id="map"></div>
-			</div>
+			<div id="map"></div>			
 	    </div>
 	</div>
 
