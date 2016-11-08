@@ -143,7 +143,104 @@ span{
 #menu li.active a{
 	color: #fff;
 }
+/* top */
+.top
+{
+  width: 100%;
+  height: 17.5%;
+  background-color: white;
+  position: fixed;
+}
+/* content 1 */
+#slider_image
+{
+  margin-top: 10%;
+  width: 100%;
+  height: 82.5%;
+}
+.content1
+{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.img-odd
+{
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  background-color: yellow;
+}
+.desc-odd
+{
+  width:70%;
+  height: 100%;
+  float: right;
+  background-color: #0054a6;
+}
+.img-even
+{
+  width: 30%;
+  height: 100%;
+  float: right;
+  background-color: yellow;
+}
+.desc-even
+{
+  width:70%;
+  height: 100%;
+  display: inline-block; 
+  background-color: #0054a6;
+}
+.desc-odd-title
+{
+  padding-top: 5%;
+  padding-left: 10%;
+  color: white;
+  text-align: left;
+}
+.desc-even-title
+{
+  padding-top: 5%;
+  padding-right: 10%;
+  color: white;
+  text-align: right;
+}
+.align-left
+{
+  text-align: left;
+}
+.align-right
+{
+  text-align: right;
+}
+.desc-odd-content
+{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+  color: white;
+}
+.desc-odd-content-left
+{
+  padding-right: 15%;
+  text-align: left;
+}
+.desc-odd-content-right
+{
+  padding-left: 15%;
+  text-align: right;
+}
 
+.desc-odd-content-left>p,.desc-odd-content-right>p
+{
+  font-size: 1.5em;
+}
+.desc-odd-title>h1,.desc-even-title>h1
+{
+  font-size: 3em;
+}
 /*Dropdown menu */
 /*___________________________________________________________________________*/
 .dropdown-content {
@@ -418,4 +515,86 @@ span{
 	height: 250px;
 	background-color: white;
 }
-
+/* Kontak */
+#kontak
+{
+  margin-top: 10%;
+  width: 100%;
+  height: 82.5%;
+  background-color: white; 
+}
+.kontak-top
+{
+  padding-top: 1%;
+  text-align: center;
+}
+.kontak-top>h1
+{
+  color: #0054a6;
+  font-size: 3em;
+  text-align: center;
+}
+.kontak-top>p
+{
+  font-size: 1.2em;
+}
+.kontak-content
+{
+  padding-top: 1em;
+  display: inline-block;
+  width: 35%;
+  height: 30%;
+}
+.input-button
+{
+  width: 50%;
+  margin-top: 0.5em;
+  padding: 0.7em;
+}
+.select-button
+{
+  width: 20%;
+  margin-top: 0.5em;
+  padding: 0.7em;
+  background: url(img/select_button.png) no-repeat right white;
+  display: inline-block;
+  position: relative;
+}
+/*.styled-select select {
+   background: transparent;
+   -webkit-appearance: none;
+   -moz-appearance:none; 
+    -webkit-appearance:none; 
+   width: 100px;
+   font-size: 11px;
+   border: 0;
+   height: 17px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   }*/
+select
+{
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  text-indent: 1px;
+  width: 20%;
+  margin-top: 0.5em;
+  padding: 0.7em;
+  text-overflow: '';
+  background-image: url(img/select_button.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+/*select {
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(img/select_button.png) no-repeat right ;
+    -webkit-appearance: none;
+    background-position-x: 244px;
+}*/
