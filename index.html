@@ -13,6 +13,13 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 	<script type="text/javascript" src="js/googlemap.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript">
+            	$(document).ready(function()
+            	{
+                	$('#slider_image').cycle('scrollLeft');
+            	});
+    	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -67,10 +74,119 @@
 	
 	<div id="pagepiling">
 	    <div class="section">
-	    	<div class="gradient">
+	    	<!--<div class="gradient">
 			</div>
 	    	<div class="bg1">
-	    	</div>
+	    	</div>-->
+		<div id="slider_image">
+                <div class="content1">
+                    <div class="img-odd">
+                        <img src="img/img_slid.png">
+                    </div>
+                    <div class="desc-odd">
+                        <div class="desc-odd-title">
+                            <h1><b>Costumer Focus</b></h1>
+                        </div>
+                        <div class="desc-odd-content">
+                            <div class="align-right">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-left">
+                                <p><b>Melayani</b> pelanggan secara inovatif. Berinteraksi dengan ramah, santun, dan hormat serta proaktif dalam mengidentifikasi kebutuhan</p>
+                            </div>
+                            <div class="align-left">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-right">
+                                <p><b>Tangguh</b> dalam rangka melayani maupun menangani keluhan pelanggan dengan rasa percaya diri serta tegas dalam menjalankan sistem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="desc-even">
+                        <div class="desc-even-title">
+                           <h1><b>Care</b></h1>
+                        </div>
+                        <div class="desc-odd-content">        
+                            <div class="align-left">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-right">
+                            
+                                <p><b>Peka</b> terhadap perubahan keinginan pemangku kepentingan (stakeholder) dan permasalahan lingkungan hidup. Berinisiatif untuk menjadi yang terdepan</p>
+                            </div>
+                            <div class="align-right">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-left">
+                                <p><b>Sigap</b> dengan siap sedia menjalankan tugas, cekatan dalam menyelesaikan permasalahan yang terjadi, dan tangkas dalam melakukan tindakan nyata.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-even">
+                        <img src="img/img_slid3.png">
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="img-odd">
+                        <img src="img/img_slid4.png">
+                    </div>
+                    <div class="desc-odd">
+                        <div class="desc-odd-title">
+                            <h1><b>Integrity</b></h1>
+                        </div>
+                        <div class="desc-odd-content">
+                        <div class="align-right">
+                            __________________________________________________________________________________________________________
+                        </div>
+                        <br/>
+                        <div class="desc-odd-content-left">
+                        
+                            <p><b>Disiplin</b> dalam menjalankan tugasnya karena taat aturan, jujur, adil dan terbuka, serta konsisten baik dalam setiap ucapan maupun tindakan</p>
+                        </div>
+                        <div class="align-left">
+                            __________________________________________________________________________________________________________
+                        </div>
+                        <br/>
+                        <div class="desc-odd-content-right">
+                            <p><b>Tanggung jawab</b> dalam melaksanakan tugas, baik dari segi hasil maupun proses karena didasari sikap amanah (komitmen).</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content4">
+                    <div class="desc-even">
+                        <div class="desc-even-title">
+                            <h1><b>Lorem Ipsum</b></h1>
+                        </div>
+                        <div class="desc-odd-content">
+                            <div class="align-left">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-right">
+                            
+                                <p><b>Melayani</b> pelanggan secara inovatif. Berinteraksi dengan ramah, santun, dan hormat serta proaktif dalam mengidentifikasi kebutuhan</p>
+                            </div>
+                            <div class="align-right">
+                                __________________________________________________________________________________________________________
+                            </div>
+                            <br/>
+                            <div class="desc-odd-content-left">
+                                <p><b>Tangguh</b> dalam rangka melayani maupun menangani keluhan pelanggan dengan rasa percaya diri serta tegas dalam menjalankan sistem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-even">
+                        <img src="img/img_slid2.png">
+                    </div>
+                </div>
+            </div>
 	    </div>
 
 	    <div class="section">
@@ -201,6 +317,57 @@
 	    	<div class="gradient2">
 			</div>
 			<div id="map"></div>			
+	    </div>
+	    <!--kontak-->
+	    <div class="section">
+	    	<div id="kontak">
+			<div class="kontak-top">
+			    <h1>Form Kontak</h1>
+			    <p>Hubungi kami dengan mengisi formulir di bawah ini dan kami akan meresponnya dengan segera mungkin</p>
+			    <form>
+				<br/>
+				Pilih Kontak
+				<br/>
+
+				<select name="kontak">
+				    <option>Marketing</option>
+				    <option>Operations</option>
+				    <option>Corporate</option>
+				    <option>Human Resources</option>
+				</select>
+                    	     </form>
+			</div>
+			<div class="kontak-content">
+                    <form>
+                        Nama
+                        <br/>
+                        <input class="input-button" type="text"/>
+                        <br/>
+                        Email
+                        <br/>
+                        <input class="input-button" type="text"/>
+                    </form>
+                </div>
+                <div class="kontak-content">
+                    <form>
+                        Telepon
+                        <br/>
+                        <input class="input-button" type="text"/>
+                        <br/>
+                        Subjek
+                        <br/>
+                        <input class="input-button" type="text"/>
+                    </form>
+                </div>
+                <div class="kontak-bottom">
+                    <form>
+                        Pesan
+                        <br/>
+                        <input class="input-button" type="text"/>
+                        
+                    </form>
+                </div>
+		</div>
 	    </div>
 	</div>
 
